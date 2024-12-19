@@ -2,11 +2,11 @@ import Image from 'next/image'
 import { CheckCircle } from 'lucide-react'
 
 const teamMembers = [
-  { name: 'Annkit Sarkar', role: 'Project Manager & Energy Consultant' },
-  { name: 'Tanishqa Gupta', role: 'Project Manager' },
-  { name: 'Subhankar Ghosh', role: 'CTO' },
-  { name: 'Sahul Kumar Parida', role: 'Technical Lead' },
-  { name: 'Saswat Kumar Panda', role: 'Technical Lead' },
+  { name: 'Annkit Sarkar', role: 'Project Manager & Energy Consultant', avatar: 'https://media.licdn.com/dms/image/v2/D5603AQGSyIPsjJTw9w/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1730098008599?e=1740009600&v=beta&t=5kyLAksPLDuWrqTzYP2HSQW5guNuSq0NYVWTFWq4UEM' },
+  { name: 'Tanishqa Gupta', role: 'Project Manager', avatar: 'https://global.discourse-cdn.com/openai1/optimized/4X/d/f/7/df77e327bf0024f176e51825513a3d061739e390_2_500x500.png' },
+  { name: 'Subhankar Ghosh', role: 'CTO', avatar: 'https://png.pngtree.com/element_our/20190528/ourmid/pngtree-520-cute-groom-avatar-image_1153286.jpg' },
+  { name: 'Sahul Kumar Parida', role: 'Technical Lead', avatar: 'https://tr.rbxcdn.com/180DAY-63a2b9e0f7081568dae19c0c2bd59070/420/420/Hat/Webp/noFilter' },
+  { name: 'Saswat Kumar Panda', role: 'Technical Lead', avatar: 'https://media.licdn.com/dms/image/v2/D5603AQG671-c6ua-Tw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1721362133891?e=1740009600&v=beta&t=OJNdTCTCdHsiyAzd7tWDkiaP2HX18tb_Y7a-E8Zi75w' },
 ]
 
 const milestones = [
@@ -88,7 +88,7 @@ export default function About() {
               <div key={index} className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md text-center">
                 <div className="mb-4">
                   <Image
-                    src={`/team-member-${index + 1}.svg`}
+                    src={member.avatar}
                     alt={member.name}
                     width={100}
                     height={100}
@@ -105,4 +105,3 @@ export default function About() {
     </div>
   )
 }
-
