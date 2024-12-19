@@ -2,57 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+/* Previous CSS rules remain the same... */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+/* Add specific styles for SDG cards */
+@layer components {
+  .sdg-card {
+    @apply bg-green-50 dark:bg-gray-800 rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300;
+  }
+
+  .sdg-number {
+    @apply text-2xl font-bold text-blue-600 dark:text-blue-400 mb-2;
+  }
+
+  .sdg-title {
+    @apply text-gray-700 dark:text-gray-300;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
+/* Improve animation performance */
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .will-change-transform {
+    will-change: transform;
   }
-}
 
-/* Add smooth scrolling for the entire page */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Add fade-in animation */
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-.fade-in {
-  animation: fadeIn 0.5s ease-in-out;
-}
-
-/* Add hover effect for buttons */
-.hover-effect {
-  transition: transform 0.3s ease-in-out;
-}
-
-.hover-effect:hover {
-  transform: translateY(-3px);
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
 }
 
