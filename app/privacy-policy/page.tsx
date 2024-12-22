@@ -56,7 +56,7 @@ export default function PrivacyPolicy() {
             If you have any questions about this Privacy Policy, please contact us at:
           </p>
           <p className="text-gray-700 dark:text-gray-400">
-            Email: <span className="text-blue-500 hover:underline">virspark369@gmail.com</span><br />
+            Email: <span className="text-blue-500 hover:underline">akarshanaspace@gmail.com</span><br />
             Phone: <span className="text-blue-500 hover:underline">+91 8697319384</span>
           </p>
         </div>

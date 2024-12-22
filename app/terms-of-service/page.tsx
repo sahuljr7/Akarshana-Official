@@ -74,7 +74,7 @@ export default function TermsOfService() {
             If you have any questions about these Terms, please contact us at:
           </p>
           <p className="text-lg leading-relaxed">
-            Email: virspark369@gmail.com<br />
+            Email: akarshanaspace@gmail.com<br />
             Phone: +91 8697319384
           </p>
         </div>
