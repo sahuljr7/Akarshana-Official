@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import { Lightbulb, Zap, Battery, Atom, FlaskRoundIcon as Flask, Telescope } from 'lucide-react'
+import { Lightbulb, Zap, Battery, Atom, FlaskRoundIcon as Telescope } from 'lucide-react'
 
 const researchAreas = [
   { icon: Zap, title: 'Energy Conversion Efficiency', description: 'Optimizing the conversion of gravitational potential energy into electrical energy.' },
