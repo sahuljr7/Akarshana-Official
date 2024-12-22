@@ -18,7 +18,7 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4 text-gray-800 dark:text-gray-200">Contact Us</h3>
             <p className="text-gray-600 dark:text-gray-400">Chandigarh University, Gharuan, The Kharar, District Mohali, Punjab, 140413</p>
-            <p className="text-gray-600 dark:text-gray-400 mt-2">Email: virspark369@gmail.com</p>
+            <p className="text-gray-600 dark:text-gray-400 mt-2">Email: akarshanaspace@gmail.com</p>
             <p className="text-gray-600 dark:text-gray-400">Phone: +91 8697319384</p>
           </div>
           <div>

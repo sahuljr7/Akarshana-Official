@@ -99,7 +99,7 @@ export default function Contact() {
               <div className="flex items-center">
                 <Mail className="h-6 w-6 text-green-500 mr-3" />
                 <a href="mailto:virspark369@gmail.com" className="text-gray-600 dark:text-gray-300 hover:text-green-500">
-                  virspark369@gmail.com
+                  akarshanaspace@gmail.com
                 </a>
               </div>
               <div className="flex items-center">

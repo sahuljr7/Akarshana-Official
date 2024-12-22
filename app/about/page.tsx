@@ -10,11 +10,11 @@ const teamMembers = [
 ]
 
 const milestones = [
-  { year: '2020', event: 'Akarshana founded' },
-  { year: '2021', event: 'First prototype developed' },
-  { year: '2022', event: 'Successful pilot project' },
-  { year: '2023', event: 'Expansion to multiple locations' },
-  { year: '2024', event: 'Launch of commercial operations' },
+  { year: '2025', event: 'Formation of Akarshana' },
+  { year: '2026', event: 'Trying to achieve Zeroth Principle' },
+  { year: '2027', event: 'Strategic Alliances' },
+  { year: '2028', event: 'Developing Strategies to reach goals' },
+  { year: '2029', event: 'Integration of Technologies for providing better solutions' },
 ]
 
 export default function About() {
