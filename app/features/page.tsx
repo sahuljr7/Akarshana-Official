@@ -80,7 +80,7 @@ export default function Features() {
   return (
     <div className="min-h-screen py-12 bg-gray-50 dark:bg-gray-900">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl font-bold text-center mb-12 text-gray-800 dark:text-white">
+        <h1 className="text-4xl font-bold text-center mb-12 text-gray-800 dark:text-white" data-aos="fade-up">
           What We Offer
         </h1>
         
@@ -89,6 +89,8 @@ export default function Features() {
             <div 
               key={index} 
               className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 transition duration-300 ease-in-out transform hover:scale-105"
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
             >
               <div className="flex items-center mb-4">
                 <feature.icon className="h-8 w-8 text-green-500 mr-3" />
@@ -108,12 +110,13 @@ export default function Features() {
           <Link
             href="/contact"
             className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-700 transition duration-150 ease-in-out"
+            data-aos="fade-up"
           >
             Contact Us to Learn More
           </Link>
         </div>
 
-        <h2 className="text-3xl font-bold text-center mb-8 text-gray-800 dark:text-white">
+        <h2 className="text-3xl font-bold text-center mb-8 text-gray-800 dark:text-white" data-aos="fade-up">
           Frequently Asked Questions
         </h2>
         <FAQAccordion faqs={faqs} />

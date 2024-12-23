@@ -1,18 +1,18 @@
 'use client'
 
-import Image from 'next/image';
-import Link from 'next/link';
-import { ArrowRight, Zap, Battery, Maximize2, DollarSign, LineChart, Cloud, Monitor, Lightbulb, Target, Globe, Award, ZapOff } from 'lucide-react';
-import { motion } from 'framer-motion';
-import AboutUs from './components/AboutUs';
-import BlogPreview from './components/BlogPreview';
+import Image from 'next/image'
+import Link from 'next/link'
+import { ArrowRight, Zap, Battery, Maximize2, DollarSign, LineChart, Cloud, Monitor, Lightbulb, Target, Globe, Award, ZapOff } from 'lucide-react'
+import { motion } from 'framer-motion'
+import AboutUs from './components/AboutUs'
+import BlogPreview from './components/BlogPreview'
 
 // Animation variants for fade-in effect
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
   animate: { opacity: 1, y: 0 },
   transition: { duration: 0.6 }
-};
+}
 
 const environmentalStats = [
   {
@@ -43,7 +43,7 @@ const environmentalStats = [
     unit: "renewable",
     description: "Clean energy certification achievement"
   }
-];
+]
 
 const sdgGoals = [
   {
@@ -62,7 +62,7 @@ const sdgGoals = [
     number: 13,
     title: "Climate Action"
   }
-];
+]
 
 export default function Home() {
   const features = [
@@ -90,7 +90,7 @@ export default function Home() {
       icon: DollarSign,
       costComparison: '30% lower lifetime costs compared to traditional energy methods'
     },
-  ];
+  ]
 
   const challenges = [
     {
@@ -121,7 +121,7 @@ export default function Home() {
       stat: '84%',
       statDescription: 'Global energy from non-renewable sources'
     }
-  ];
+  ]
 
   return (
     <div className="min-h-screen">
@@ -137,13 +137,15 @@ export default function Home() {
         />
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4" data-aos="fade-up">
             Elevate. Innovate. Levitate.
           </h1>
-          <p className="text-xl sm:text-2xl mb-8">Lifting dreams, grounding reality</p>
+          <p className="text-xl sm:text-2xl mb-8" data-aos="fade-up" data-aos-delay="200">Lifting dreams, grounding reality</p>
           <Link
             href="/about"
             className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-700 transition duration-150 ease-in-out hover:scale-105 active:bg-green-800"
+            data-aos="fade-up"
+            data-aos-delay="400"
           >
             Learn More
             <ArrowRight className="ml-2" size={20} />
@@ -163,10 +165,10 @@ export default function Home() {
             animate={fadeIn.animate}
             transition={fadeIn.transition}
           >
-            <h2 className="text-3xl font-bold mb-4 text-gray-800 dark:text-white">
+            <h2 className="text-3xl font-bold mb-4 text-gray-800 dark:text-white" data-aos="fade-up">
               Global Energy Challenges
             </h2>
-            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
               The world faces critical energy challenges that demand innovative solutions. Our gravity-powered system addresses these challenges head-on.
             </p>
           </motion.div>
@@ -179,6 +181,8 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
+                data-aos="fade-up"
+                data-aos-delay={index * 100}
               >
                 <div className="flex flex-col items-center text-center">
                   <div className="mb-4 p-3 rounded-full bg-blue-100 dark:bg-blue-900">
@@ -208,11 +212,11 @@ export default function Home() {
       {/* Problem-Solution Approach */}
       <section className="py-16 bg-gray-50 dark:bg-gray-800">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center mb-12 text-gray-800 dark:text-white">
+          <h2 className="text-3xl font-bold text-center mb-12 text-gray-800 dark:text-white" data-aos="fade-up">
             Addressing Global Energy Challenges
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div>
+            <div data-aos="fade-right">
               <h3 className="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">Current Energy Limitations</h3>
               <ul className="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-2">
                 <li>High carbon emissions from fossil fuels</li>
@@ -221,7 +225,7 @@ export default function Home() {
                 <li>Safety concerns with nuclear energy</li>
               </ul>
             </div>
-            <div className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-lg">
+            <div className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-lg" data-aos="fade-left">
               <h3 className="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">Akarshana's Solution</h3>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
                 Our gravity-powered system offers a sustainable, reliable, and scalable alternative that addresses these challenges:
@@ -240,7 +244,7 @@ export default function Home() {
       {/* Key Benefits Showcase */}
       <section className="py-16 bg-gray-100 dark:bg-gray-800">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center mb-12 text-gray-800 dark:text-white">
+          <h2 className="text-3xl font-bold text-center mb-12 text-gray-800 dark:text-white" data-aos="fade-up">
             Key Benefits of Akarshana
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -248,6 +252,8 @@ export default function Home() {
               <div
                 key={index}
                 className="bg-white dark:bg-gray-700 rounded-lg shadow-md p-6 transition duration-300 ease-in-out transform hover:scale-105"
+                data-aos="fade-up"
+                data-aos-delay={index * 100}
               >
                 <feature.icon className="h-12 w-12 text-green-600 dark:text-green-400 mb-4" />
                 <h3 className="text-xl font-semibold mb-3 text-gray-800 dark:text-white">{feature.title}</h3>
@@ -269,11 +275,11 @@ export default function Home() {
       {/* Environmental Impact */}
       <section className="py-16 bg-white dark:bg-gray-900">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center mb-12 text-gray-800 dark:text-white">
+          <h2 className="text-3xl font-bold text-center mb-12 text-gray-800 dark:text-white" data-aos="fade-up">
             Environmental Impact
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div>
+            <div data-aos="fade-right">
               <h3 className="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">Carbon Reduction</h3>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
                 Our gravity-powered system can significantly reduce carbon emissions compared to traditional energy sources:
@@ -284,7 +290,7 @@ export default function Home() {
                 <li>Minimal environmental disturbance</li>
               </ul>
             </div>
-            <div>
+            <div data-aos="fade-left">
               <h3 className="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">Global Impact</h3>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
                 If widely adopted, Akarshana's technology could contribute to:
@@ -309,10 +315,10 @@ export default function Home() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl font-bold mb-4 text-gray-800 dark:text-white">
+            <h2 className="text-3xl font-bold mb-4 text-gray-800 dark:text-white" data-aos="fade-up">
               Environmental Impact Stats
             </h2>
-            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
               Our gravity-powered solution contributes significantly to global sustainability goals while reducing environmental impact.
             </p>
           </motion.div>
@@ -326,6 +332,8 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
+                data-aos="fade-up"
+                data-aos-delay={index * 100}
               >
                 <div className="flex flex-col items-center text-center">
                   <div className="mb-4 p-3 rounded-full bg-green-100 dark:bg-green-900">
@@ -362,7 +370,7 @@ export default function Home() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl font-bold mb-4 text-gray-800 dark:text-white">
+            <h2 className="text-3xl font-bold mb-4 text-gray-800 dark:text-white" data-aos="fade-up">
               UN Sustainable Development Goals Alignment
             </h2>
           </motion.div>
@@ -376,6 +384,8 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
+                data-aos="fade-up"
+                data-aos-delay={index * 100}
               >
                 <div className="flex flex-col items-center text-center">
                   <h3 className="text-2xl font-bold text-blue-600 dark:text-blue-400 mb-2">
@@ -397,12 +407,14 @@ export default function Home() {
       {/* Call to Action */}
       <section className="py-16 bg-green-600 dark:bg-green-800">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold mb-8 text-white">
+          <h2 className="text-3xl font-bold mb-8 text-white" data-aos="fade-up">
             Join the Gravity-Powered Revolution
           </h2>
           <Link
             href="/contact"
             className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-green-600 bg-white hover:bg-gray-50 transition duration-150 ease-in-out"
+            data-aos="fade-up"
+            data-aos-delay="200"
           >
             Get in Touch
             <ArrowRight className="ml-2" size={20} />
@@ -410,6 +422,6 @@ export default function Home() {
         </div>
       </section>
     </div>
-  );
+  )
 }
 

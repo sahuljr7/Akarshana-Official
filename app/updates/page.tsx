@@ -27,7 +27,7 @@ export default function Updates() {
   return (
     <div className="min-h-screen py-12 bg-gray-50 dark:bg-gray-900">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl font-bold text-center mb-12 text-gray-800 dark:text-white">
+        <h1 className="text-4xl font-bold text-center mb-12 text-gray-800 dark:text-white" data-aos="fade-up">
           Latest Updates
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -39,6 +39,8 @@ export default function Updates() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3 }}
+              data-aos="fade-up"
+              data-aos-delay={update.id * 100}
             >
               <Link href={update.link}>
                 <div className="relative h-48 md:h-64">

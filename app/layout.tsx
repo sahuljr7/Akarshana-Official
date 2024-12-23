@@ -3,6 +3,7 @@ import './globals.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import { ThemeProvider } from './components/ThemeProvider'
+import AOSWrapper from './components/AOSWrapper'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,9 +21,11 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <Header />
-          <main>{children}</main>
-          <Footer />
+          <AOSWrapper>
+            <Header />
+            <main>{children}</main>
+            <Footer />
+          </AOSWrapper>
         </ThemeProvider>
       </body>
     </html>

@@ -17,6 +17,30 @@
   .sdg-title {
     @apply text-gray-700 dark:text-gray-300;
   }
+
+  .update-card {
+    @apply bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl;
+  }
+
+  .update-card-image {
+    @apply relative h-48 md:h-64;
+  }
+
+  .update-card-content {
+    @apply p-6;
+  }
+
+  .update-card-title {
+    @apply text-xl font-semibold mb-2 text-gray-800 dark:text-white;
+  }
+
+  .update-card-description {
+    @apply text-gray-600 dark:text-gray-300 mb-4;
+  }
+
+  .update-card-date {
+    @apply text-sm text-gray-500 dark:text-gray-400;
+  }
 }
 
 /* Improve animation performance */

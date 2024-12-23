@@ -18,10 +18,10 @@ export default function BlogPage() {
   return (
     <div className="min-h-screen py-16 bg-gray-50 dark:bg-gray-900">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl font-bold text-center mb-8 text-gray-800 dark:text-white">
+        <h1 className="text-4xl font-bold text-center mb-8 text-gray-800 dark:text-white" data-aos="fade-up">
           Insights & Innovations
         </h1>
-        <div className="mb-8">
+        <div className="mb-8" data-aos="fade-up" data-aos-delay="100">
           <div className="relative">
             <input
               type="text"
@@ -34,13 +34,15 @@ export default function BlogPage() {
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredPosts.map((post) => (
+          {filteredPosts.map((post, index) => (
             <motion.div
               key={post.id}
               className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.3 }}
+              transition={{ duration: 0.3, delay: index * 0.1 }}
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
             >
               <Image
                 src={post.imageUrl}

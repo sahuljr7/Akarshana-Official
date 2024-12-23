@@ -30,13 +30,13 @@ export default function ResearchAndDevelopment() {
   return (
     <div className="min-h-screen py-12 bg-gray-50 dark:bg-gray-900">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl font-bold text-center mb-12 text-gray-800 dark:text-white">
+        <h1 className="text-4xl font-bold text-center mb-12 text-gray-800 dark:text-white" data-aos="fade-up">
           Research & Development
         </h1>
 
         {/* Research Areas Section */}
         <section className="mb-16">
-          <h2 className="text-3xl font-semibold mb-8 text-gray-800 dark:text-white">Our Research Areas</h2>
+          <h2 className="text-3xl font-semibold mb-8 text-gray-800 dark:text-white" data-aos="fade-up">Our Research Areas</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {researchAreas.map((area, index) => (
               <motion.div
@@ -45,6 +45,8 @@ export default function ResearchAndDevelopment() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
+                data-aos="fade-up"
+                data-aos-delay={index * 100}
               >
                 <div className="flex items-center mb-4">
                   <area.icon className="h-8 w-8 text-green-500 mr-3" />
@@ -58,7 +60,7 @@ export default function ResearchAndDevelopment() {
 
         {/* Recent Discoveries Section */}
         <section className="mb-16">
-          <h2 className="text-3xl font-semibold mb-8 text-gray-800 dark:text-white">Recent Discoveries</h2>
+          <h2 className="text-3xl font-semibold mb-8 text-gray-800 dark:text-white" data-aos="fade-up">Recent Discoveries</h2>
           <div className="space-y-8">
             {recentDiscoveries.map((discovery, index) => (
               <motion.div
@@ -67,6 +69,8 @@ export default function ResearchAndDevelopment() {
                 initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: index * 0.1 }}
+                data-aos="fade-up"
+                data-aos-delay={index * 100}
               >
                 <h3 className="text-xl font-semibold mb-3 text-gray-800 dark:text-white flex items-center">
                   <Lightbulb className="h-6 w-6 text-yellow-500 mr-2" />
@@ -80,12 +84,13 @@ export default function ResearchAndDevelopment() {
 
         {/* State-of-the-Art Lab Section */}
         <section>
-          <h2 className="text-3xl font-semibold mb-8 text-gray-800 dark:text-white">Our State-of-the-Art Lab</h2>
+          <h2 className="text-3xl font-semibold mb-8 text-gray-800 dark:text-white" data-aos="fade-up">Our State-of-the-Art Lab</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.2 }}
+              data-aos="fade-right"
             >
               <Image
                 src="https://images.unsplash.com/photo-1576153192396-180ecef2a715?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1674&q=80"
@@ -99,6 +104,7 @@ export default function ResearchAndDevelopment() {
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.3 }}
+              data-aos="fade-left"
             >
               <h3 className="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">Cutting-Edge Facilities</h3>
               <p className="text-gray-600 dark:text-gray-300 mb-4">

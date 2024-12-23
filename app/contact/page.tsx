@@ -29,12 +29,12 @@ export default function Contact() {
   return (
     <div className="min-h-screen py-12 bg-gray-50 dark:bg-gray-900">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl font-bold text-center mb-12 text-gray-800 dark:text-white">
+        <h1 className="text-4xl font-bold text-center mb-12 text-gray-800 dark:text-white" data-aos="fade-up">
           Contact Us
         </h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div>
+          <div data-aos="fade-right">
             <form onSubmit={handleSubmit} className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
               <div className="mb-4">
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
@@ -81,13 +81,14 @@ export default function Contact() {
               <button
                 type="submit"
                 className="w-full bg-green-600 text-white py-2 px-4 rounded-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 transition duration-300"
+                data-aos="fade-up"
               >
                 Send Message
               </button>
             </form>
           </div>
 
-          <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+          <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md" data-aos="fade-left">
             <h2 className="text-2xl font-semibold mb-6 text-gray-800 dark:text-white">Get in Touch</h2>
             <div className="space-y-4">
               <div className="flex items-start">
@@ -98,8 +99,8 @@ export default function Contact() {
               </div>
               <div className="flex items-center">
                 <Mail className="h-6 w-6 text-green-500 mr-3" />
-                <a href="mailto:virspark369@gmail.com" className="text-gray-600 dark:text-gray-300 hover:text-green-500">
-                  akarshanaspace@gmail.com
+                <a href="mailto:akarshanaspace@gmail.com" className="text-gray-600 dark:text-gray-300 hover:text-green-500">
+                akarshanaspace@gmail.com
                 </a>
               </div>
               <div className="flex items-center">
