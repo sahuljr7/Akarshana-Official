@@ -177,7 +177,7 @@ export default function Home() {
             {challenges.map((challenge, index) => (
               <motion.div
                 key={index}
-                className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
+                className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg hover-effect-challenges"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
@@ -185,8 +185,8 @@ export default function Home() {
                 data-aos-delay={index * 100}
               >
                 <div className="flex flex-col items-center text-center">
-                  <div className="mb-4 p-3 rounded-full bg-blue-100 dark:bg-blue-900">
-                    <challenge.icon className="h-8 w-8 text-blue-600 dark:text-blue-400" />
+                  <div className="mb-4 p-3 rounded-full bg-[#085548]/10 dark:bg-[#085548]/30">
+                    <challenge.icon className="h-8 w-8 text-[#085548] dark:text-[#085548]" />
                   </div>
                   <h3 className="text-xl font-semibold mb-2 text-gray-800 dark:text-white">
                     {challenge.title}
@@ -195,7 +195,7 @@ export default function Home() {
                     {challenge.description}
                   </p>
                   <div className="mt-auto">
-                    <div className="text-3xl font-bold text-blue-600 dark:text-blue-400">
+                    <div className="text-3xl font-bold text-[#085548] dark:text-[#085548]">
                       {challenge.stat}
                     </div>
                     <p className="text-sm text-gray-500 dark:text-gray-400">
@@ -216,7 +216,7 @@ export default function Home() {
             Addressing Global Energy Challenges
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div data-aos="fade-right">
+            <div data-aos="fade-right" className="hover-effect-addressing-challenges p-6 rounded-lg">
               <h3 className="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">Current Energy Limitations</h3>
               <ul className="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-2">
                 <li>High carbon emissions from fossil fuels</li>
@@ -225,7 +225,7 @@ export default function Home() {
                 <li>Safety concerns with nuclear energy</li>
               </ul>
             </div>
-            <div className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-lg" data-aos="fade-left">
+            <div className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-lg hover-effect-addressing-challenges" data-aos="fade-left">
               <h3 className="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">Akarshana's Solution</h3>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
                 Our gravity-powered system offers a sustainable, reliable, and scalable alternative that addresses these challenges:
@@ -251,7 +251,7 @@ export default function Home() {
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="bg-white dark:bg-gray-700 rounded-lg shadow-md p-6 transition duration-300 ease-in-out transform hover:scale-105"
+                className="bg-white dark:bg-gray-700 rounded-lg shadow-md p-6 hover-effect hover-effect-home"
                 data-aos="fade-up"
                 data-aos-delay={index * 100}
               >
@@ -273,13 +273,13 @@ export default function Home() {
       </section>
 
       {/* Environmental Impact */}
-      <section className="py-16 bg-white dark:bg-gray-900">
+      <section className="py-16 bg-gray-100 dark:bg-gray-800">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-800 dark:text-white" data-aos="fade-up">
             Environmental Impact
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div data-aos="fade-right">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div data-aos="fade-right" className="hover-effect-environmental-impact p-6 rounded-lg">
               <h3 className="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">Carbon Reduction</h3>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
                 Our gravity-powered system can significantly reduce carbon emissions compared to traditional energy sources:
@@ -290,7 +290,7 @@ export default function Home() {
                 <li>Minimal environmental disturbance</li>
               </ul>
             </div>
-            <div data-aos="fade-left">
+            <div data-aos="fade-left" className="hover-effect-environmental-impact p-6 rounded-lg">
               <h3 className="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">Global Impact</h3>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
                 If widely adopted, Akarshana's technology could contribute to:
@@ -327,7 +327,7 @@ export default function Home() {
             {environmentalStats.map((stat, index) => (
               <motion.div
                 key={index}
-                className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300"
+                className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-lg hover-effect-impact-stats"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -379,7 +379,7 @@ export default function Home() {
             {sdgGoals.map((goal, index) => (
               <motion.div
                 key={index}
-                className="bg-green-50 dark:bg-gray-800 rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300"
+                className="bg-green-50 dark:bg-gray-800 rounded-lg p-6 shadow-lg hover-effect-sdg"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
