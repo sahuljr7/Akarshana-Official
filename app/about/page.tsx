@@ -6,7 +6,7 @@ import { CheckCircle } from 'lucide-react'
 const teamMembers = [
   {
     name: 'Annkit Sarkar',
-    role: 'Project Manager & Energy Consultant',
+    role: 'Founder & Energy Consultant',
     image: 'https://media.licdn.com/dms/image/v2/D5603AQGSyIPsjJTw9w/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1730098008599?e=1740009600&v=beta&t=5kyLAksPLDuWrqTzYP2HSQW5guNuSq0NYVWTFWq4UEM' 
   },
   {
@@ -22,12 +22,42 @@ const teamMembers = [
   {
     name: 'Sahul Kumar Parida',
     role: 'Technical Lead',
-    image: 'https://tr.rbxcdn.com/180DAY-63a2b9e0f7081568dae19c0c2bd59070/420/420/Hat/Webp/noFilter'
+    image: 'https://media.licdn.com/dms/image/v2/D5603AQH8ALWrijks2w/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1721230615203?e=1740614400&v=beta&t=oNHmIsk2BfQ_TQKG2XcVZMFZ47YECHpgj3wVfdwClMI'
   },
   {
     name: 'Saswat Kumar Panda',
     role: 'Technical Lead',
     image: 'https://media.licdn.com/dms/image/v2/D5603AQG671-c6ua-Tw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1721362133891?e=1740009600&v=beta&t=OJNdTCTCdHsiyAzd7tWDkiaP2HX18tb_Y7a-E8Zi75w'
+  },
+  {
+    name: 'Subhadeep Sen',
+    role: 'Control System Engineer',
+    image: 'https://media.licdn.com/dms/image/v2/D4D03AQFmgjZZYaIxWg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1687241335657?e=1740614400&v=beta&t=i23nq3ZIuiduoMCjpdWm7JC4NLNUEt9qFMCMaCTEOMc'
+  },
+  {
+    name: 'AVS Hemaditya',
+    role: 'AI Engineer',
+    image: 'https://media.licdn.com/dms/image/v2/D5603AQEqnTy6mX7TmQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1718295469311?e=1740614400&v=beta&t=d882g-iFfXmNQojbFL6Bt4-He6Xl6S7rDysSkVbyQa8'
+  },
+  {
+    name: 'Revanth Goli',
+    role: 'Researcher',
+    image: 'https://img.freepik.com/free-photo/3d-rendering-boy-wearing-cap-with-letter-r_1142-40523.jpg'
+  },
+  {
+    name: 'Shruti Bhushan',
+    role: 'AI Engineer',
+    image: 'https://media.licdn.com/dms/image/v2/D4D35AQHVUh-uI27JZw/profile-framedphoto-shrink_200_200/profile-framedphoto-shrink_200_200/0/1728019899095?e=1735725600&v=beta&t=X8DS1BCCTqi9V1hB1prdygKrys_Ih3Xczjx6PQWO2gc'
+  },
+  {
+    name: 'Marcelo Maciel Amaral',
+    role: 'Research Scientist',
+    image: 'https://media.licdn.com/dms/image/v2/C5603AQEfYAF7z50WQQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1525808547289?e=1740614400&v=beta&t=kX-7PDMfQwKzbLPUSs8D1_EG1VFS7tViWPmOSYqNCLs'
+  },
+  {
+    name: 'Tony Barrera',
+    role: 'Research Scientist',
+    image: 'https://media.licdn.com/dms/image/v2/C4D03AQGO9aG2bL5XNg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1661448443936?e=1740614400&v=beta&t=xiUplclSy5U2WwuQaaStSOYIFkFzXoNjHFjVedXfXAU'
   },
 ]
 
