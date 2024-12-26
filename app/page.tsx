@@ -186,7 +186,7 @@ export default function Home() {
               >
                 <div className="flex flex-col items-center text-center">
                   <div className="mb-4 p-3 rounded-full bg-[#085548]/10 dark:bg-[#085548]/30">
-                    <challenge.icon className="h-8 w-8 text-[#085548] dark:text-[#085548]" />
+                    <challenge.icon className="h-8 w-8 text-green-600 dark:text-green-400]" />
                   </div>
                   <h3 className="text-xl font-semibold mb-2 text-gray-800 dark:text-white">
                     {challenge.title}
@@ -195,7 +195,7 @@ export default function Home() {
                     {challenge.description}
                   </p>
                   <div className="mt-auto">
-                    <div className="text-3xl font-bold text-[#085548] dark:text-[#085548]">
+                    <div className="text-3xl font-bold text-green-600 dark:text-green-400">
                       {challenge.stat}
                     </div>
                     <p className="text-sm text-gray-500 dark:text-gray-400">
